@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicWale</title>
+    <link rel="stylesheet" href="one.css">
+</head>
+<body>
+
+
+    <div id="videoContainer">
+        <video id="videoBackground" autoplay loop muted>
+            <source src="default.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>MusicWale𝄞</h1>
+        <p>Type how you're feeling, and we'll suggest a song! Lalala...</p>
+        <textarea id="moodInput" placeholder="Describe your mood..."></textarea>
+        <button onclick="analyzeMood()">Get Song Recommendation</button>
+        <h2 id="songTitle"></h2>
+        <p id="songArtist"></p>
+        <audio id="songPlayer" controls style="display: none;"></audio>
+    </div>
+
+    <script src="one.js"></script>
+
+</body>
+</html>
